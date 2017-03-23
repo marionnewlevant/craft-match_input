@@ -51,7 +51,7 @@ class MatchInputField extends PlainText
      * @var string The input’s errorMessage text
      */
     public $errorMessage;
-
+    
     // Static Methods
     // =========================================================================
 
@@ -62,7 +62,7 @@ class MatchInputField extends PlainText
      */
     public static function displayName(): string
     {
-        return Craft::t('matchInput', 'Match Input');
+        return Craft::t('matchinput', 'Match Input');
     }
 
     // Public Methods
@@ -92,7 +92,7 @@ class MatchInputField extends PlainText
         $inputMask = $this->$object;
         if (!self::validateRegex($inputMask))
         {
-            $this->addError($object, Craft::t('matchInput', 'Not a valid regex (missing delimiters?)'));
+            $this->addError($object, Craft::t('matchinput', 'Not a valid regex (missing delimiters?)'));
         }
     }
 
