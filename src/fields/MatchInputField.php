@@ -51,7 +51,30 @@ class MatchInputField extends PlainText
      * @var string The input’s errorMessage text
      */
     public $errorMessage;
-    
+
+    // If we don't duplicate the properties of PlainText field here, then they don't get saved
+    // =========================================================================
+
+    /**
+     * @var string|null The input’s placeholder text
+     */
+    public $placeholder;
+
+    /**
+     * @var bool|null Whether the input should allow line breaks
+     */
+    public $multiline;
+
+    /**
+     * @var int The minimum number of rows the input should have, if multi-line
+     */
+    public $initialRows = 4;
+
+    /**
+     * @var int|null The maximum number of characters allowed in the field
+     */
+    public $charLimit;
+
     // Static Methods
     // =========================================================================
 

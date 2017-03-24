@@ -1,7 +1,7 @@
 {
   "name": "marionnewlevant/match-input",
   "description": "Craft field type for text fields that match a regex pattern",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "craft-plugin",
   "keywords": [
     "craft", "craftcms", "craft-plugin", "matchinput"
@@ -23,7 +23,7 @@
   "extra": {
     "name": "Match Input",
     "handle": "matchInput",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "schemaVersion": "1.0.0",
     "hasSettings": false,
     "hasCpSection": false,
