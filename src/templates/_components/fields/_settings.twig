@@ -15,7 +15,7 @@
 {% import "_includes/forms" as forms %}
 
 {{ forms.textField({
-  label: "Input Mask"|t('matchinput'),
+  label: "Input Mask"|t('match-input'),
   instructions: "regex pattern that the input must match. See [php manual](http://php.net/manual/en/reference.pcre.pattern.syntax.php) for syntax. Example: '/^\\d{5}(-\\d{4})?$/' to match a zip-code"|t('matchinput'),
   id: 'inputMask',
   name: 'inputMask',
@@ -25,7 +25,7 @@
 }) }}
 
 {{ forms.textField({
-  label: "Error Message"|t('matchinput'),
+  label: "Error Message"|t('match-input'),
   instructions: "Error message when pattern does not match field"|t('matchinput'),
   id: 'errorMessage',
   name: 'errorMessage',
