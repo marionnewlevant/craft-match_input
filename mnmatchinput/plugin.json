@@ -1,0 +1,9 @@
+{
+  "name": "MN Match Input",
+  "version": "2.0",
+  "developer": "Marion Newlevant",
+  "developerUrl": "http://marion.newlevant.com",
+  "description": "Fieldtype for fields that match a regex",
+  "documentationUrl": "https://github.com/marionnewlevant/craft-mn_matchinput",
+  "releaseFeedUrl": "https://raw.githubusercontent.com/marionnewlevant/craft-mn_matchinput/craft3/releases.json"
+}

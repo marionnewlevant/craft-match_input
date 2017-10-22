@@ -1,17 +1,3 @@
-{#
-/**
- * Match Input plugin for Craft CMS 3.x
- *
- *  Field Input
- *
- * @author    Marion Newlevant
- * @copyright Copyright (c) 2017 Marion Newlevant
- * @link      http://marion.newlevant.com
- * @package   MatchInput
- * @since     1.0.0
- */
-#}
-
 {% import "_includes/forms" as forms %}
 
 {% set config = {
@@ -19,7 +5,7 @@
   name: name,
   value: value,
   class: 'nicetext',
-  maxlength: field.charLimit,
+  maxlength: field.maxLength,
   showCharsLeft: true,
   placeholder: field.placeholder,
   rows: field.initialRows
@@ -30,4 +16,3 @@
 {% else %}
   {{ forms.text(config) }}
 {% endif %}
-
