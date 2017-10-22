@@ -4,5 +4,5 @@
 ### Added
 - Initial release
 ## [1.0.1] - 2017.03.23
-### Added
+### Fixed
 - Updates for craft changes
