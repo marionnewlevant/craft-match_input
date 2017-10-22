@@ -1,8 +1,5 @@
 # Match Input Changelog
 
-## [1.0.0] - 2017.02.19
+## 2.0.0 - 2017-10-22
 ### Added
-- Initial release
-## [1.0.1] - 2017.03.23
-### Fixed
-- Updates for craft changes
+- Initial release for Craft 3

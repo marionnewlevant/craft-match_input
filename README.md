@@ -6,9 +6,15 @@ Craft field type for text fields that match a regex pattern.
 
 To install Match Input, follow these steps:
 
-1. Download and unzip the file and place the `matchinput` directory into your `craft/plugins` directory
-3.  -OR- install with Composer via `composer require marionnewlevant/match-input`
-4. Install plugin in the Craft Control Panel under Settings > Plugins
+1. Open your terminal and go to your Craft project:
+
+        cd /path/to/project
+
+2. Then tell Composer to load the plugin:
+
+        composer require marionnewlevant/match-input
+
+3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Match Input.
 
 Match Input works on Craft 3.x.
 
