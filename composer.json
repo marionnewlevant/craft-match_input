@@ -4,7 +4,7 @@
   "version": "1.0.1",
   "type": "craft-plugin",
   "keywords": [
-    "craft", "craftcms", "craft-plugin", "matchinput"
+    "craft", "craftcms", "craft-plugin", "match-input"
   ],
   "license": "MIT",
   "authors": [
@@ -14,6 +14,7 @@
     }
   ],
   "require": {
+    "craftcms/cms": "~3.0.0-beta.23"
   },
   "autoload": {
     "psr-4": {
@@ -22,12 +23,12 @@
   },
   "extra": {
     "name": "Match Input",
-    "handle": "matchInput",
+    "handle": "match-input",
     "version": "1.0.1",
     "schemaVersion": "1.0.0",
-    "hasSettings": false,
+    "hasCpSettings": false,
     "hasCpSection": false,
-    "documentationUrl": "https://github.com/marionnewlevant/craft3-match_input/blob/master/README.md",
-    "changelogUrl": "https://raw.githubusercontent.com/marionnewlevant/craft3-match_input/master/CHANGELOG.md"
+    "documentationUrl": "https://github.com/marionnewlevant/craft-match_input/blob/master/README.md",
+    "changelogUrl": "https://raw.githubusercontent.com/marionnewlevant/craft-match_input/master/CHANGELOG.md"
   }
 }
