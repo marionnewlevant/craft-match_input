@@ -115,7 +115,7 @@ class MatchInputField extends PlainText
         $inputMask = $this->$object;
         if (!self::validateRegex($inputMask))
         {
-            $this->addError($object, Craft::t('match-input', 'Not a valid regex (missing delimiters?)'));
+            $this->addError($object, Craft::t('matchinput', 'Not a valid regex (missing delimiters?)'));
         }
     }
 
@@ -128,15 +128,9 @@ class MatchInputField extends PlainText
     public function getSettingsHtml()
     {
         return Craft::$app->getView()->renderTemplate(
-            'match-input'
-            . DIRECTORY_SEPARATOR
-            . '_components'
-            . DIRECTORY_SEPARATOR
-            . 'fields'
-            . DIRECTORY_SEPARATOR
-            . '_settings',
+            'match-input/_components/fields/MatchInputField_settings',
             [
-            'field' => $this
+                'field' => $this
             ]
         );
     }
@@ -154,7 +148,7 @@ class MatchInputField extends PlainText
     {
 
         return Craft::$app->getView()->renderTemplate(
-            'match-input'. DIRECTORY_SEPARATOR . '_components'. DIRECTORY_SEPARATOR . 'fields'. DIRECTORY_SEPARATOR . '_input',
+            'match-input/_components/fields/MatchInputField_input',
             [
                 'name' => $this->handle,
                 'value' => $value,
