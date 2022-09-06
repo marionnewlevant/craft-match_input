@@ -92,18 +92,11 @@ class MatchInputField extends PlainText
     // =========================================================================
 
     /**
-     * Returns the validation rules for attributes.
-     *
-     * Validation rules are used by [[validate()]] to check if attribute values are valid.
-     * Child classes may override this method to declare different validation rules.
-     *
-     * More info: http://www.yiiframework.com/doc-2.0/guide-input-validation.html
-     *
-     * @return array
+     * @inheritdoc
      */
-    public function rules()
+    protected function defineRules(): array
     {
-        $rules = parent::rules();
+        $rules = parent::defineRules();
         $rules[] = [['inputMask', 'errorMessage'], 'string'];
         $rules[] = ['inputMask', 'required'];
         $rules[] = ['inputMask', 'isValidRegex'];
@@ -119,13 +112,10 @@ class MatchInputField extends PlainText
         }
     }
 
-
     /**
-     * Returns the component’s settings HTML.
-     *
-     * @return string|null
+     * @inheritdoc
      */
-    public function getSettingsHtml()
+    public function getSettingsHtml(): ?string
     {
         return Craft::$app->getView()->renderTemplate(
             'match-input/_components/fields/MatchInputField_settings',
@@ -136,17 +126,10 @@ class MatchInputField extends PlainText
     }
 
     /**
-     * Returns the field’s input HTML.
-     *
-     * @param mixed                 $value           The field’s value. This will either be the [[normalizeValue() normalized value]],
-     *                                               raw POST data (i.e. if there was a validation error), or null
-     * @param ElementInterface|null $element         The element the field is associated with, if there is one
-     *
-     * @return string The input HTML.
+     * @inheritdoc
      */
-    public function getInputHtml($value, ElementInterface $element = null): string
+    protected function inputHtml(mixed $value, ?ElementInterface $element = null): string
     {
-
         return Craft::$app->getView()->renderTemplate(
             'match-input/_components/fields/MatchInputField_input',
             [
@@ -176,7 +159,7 @@ class MatchInputField extends PlainText
      *
      * @return void
      */
-    public function validateMatchesRegex(ElementInterface $element, array $params = null)
+    public function validateMatchesRegex(ElementInterface $element): void
     {
         $value = $element->getFieldValue($this->handle);
         $match = preg_match($this->inputMask, $value);
