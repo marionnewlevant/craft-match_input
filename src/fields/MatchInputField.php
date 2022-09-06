@@ -58,22 +58,22 @@ class MatchInputField extends PlainText
     /**
      * @var string|null The input’s placeholder text
      */
-    public $placeholder;
+    public ?string $placeholder = null;
 
     /**
-     * @var bool|null Whether the input should allow line breaks
+     * @var bool Whether the input should allow line breaks
      */
-    public $multiline;
+    public bool $multiline = false;
 
     /**
      * @var int The minimum number of rows the input should have, if multi-line
      */
-    public $initialRows = 4;
+    public int $initialRows = 4;
 
     /**
      * @var int|null The maximum number of characters allowed in the field
      */
-    public $charLimit;
+    public ?int $charLimit = null;
 
     // Static Methods
     // =========================================================================
