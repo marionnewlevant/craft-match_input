@@ -1,4 +1,4 @@
-# Match Input plugin for Craft CMS 3.x
+# Match Input plugin for Craft CMS 4.x
 
 Craft field type for text fields that match a regex pattern.
 
@@ -13,7 +13,7 @@ or
 
 1. Install via the Plugin Store
 
-Match Input works on Craft 3.x.
+Match Input works on Craft 4.x.
 
 ## Match Input Overview
 

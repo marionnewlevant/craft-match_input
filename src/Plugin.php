@@ -43,12 +43,11 @@ class Plugin extends \craft\base\Plugin
 
         // Register our fields
         Event::on(
-            Fields::className(),
+            Fields::class,
             Fields::EVENT_REGISTER_FIELD_TYPES,
             function (RegisterComponentTypesEvent $event) {
-            	$event->types[] = MatchInputField::class;
+                $event->types[] = MatchInputField::class;
             }
         );
     }
-
 }
